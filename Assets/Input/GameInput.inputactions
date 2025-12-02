@@ -1,0 +1,72 @@
+{
+    "version": 1,
+    "name": "GameInput",
+    "maps": [
+        {
+            "name": "InGame",
+            "id": "3d395c09-3cf3-4e71-9875-321c23d5850f",
+            "actions": [
+                {
+                    "name": "Mouse_TouchPos",
+                    "type": "Value",
+                    "id": "1b63256c-b28b-4a2a-b1d2-468e3b429e0a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Mouse_TouchPress",
+                    "type": "Button",
+                    "id": "349e97af-d8d2-4a7f-bc81-f0c4dfaaafdd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0c97128c-007d-4ddc-b9cd-63530f6b2182",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";MouseTouch",
+                    "action": "Mouse_TouchPos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "97c4f0ef-b09d-4abd-a925-8b9fc8d017f6",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse_TouchPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "MouseTouch",
+            "bindingGroup": "MouseTouch",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
